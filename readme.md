@@ -2,6 +2,8 @@
 
 > Simple tool for downloading all comics for offline use
 
+![screenshot](screenshot.png)
+
 ### Install
 
 ```js
