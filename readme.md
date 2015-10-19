@@ -11,8 +11,8 @@ $ npm i -g darklegacycomics
 ### Usage
 
 ```js
-	Usage
-	  $ darklegacycomics <path>
+Usage
+  $ darklegacycomics <path>
 ```
 
 ## License
