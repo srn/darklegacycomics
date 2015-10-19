@@ -1,0 +1,43 @@
+{
+  "name": "darklegacycomics",
+  "version": "1.0.0",
+  "description": "Simple tool for downloading all comics for offline use",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel index.js --out-file index-compiled.js --optional runtime",
+    "watch": "npm run compile -- --watch",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srn/darklegacycomics.git"
+  },
+  "keywords": [
+    "dark",
+    "legacy",
+    "comics"
+  ],
+  "author": "Søren Brokær <root@srn.io> (http://srn.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srn/darklegacycomics/issues"
+  },
+  "homepage": "https://github.com/srn/darklegacycomics#readme",
+  "dependencies": {
+    "bottleneck": "1.9.1",
+    "cheerio": "0.19.0",
+    "elegant-spinner": "1.0.1",
+    "got": "5.0.0",
+    "limiter": "1.0.5",
+    "log-update": "1.0.2",
+    "meow": "3.4.2",
+    "mkdirp": "0.5.1",
+    "slug": "0.9.1",
+    "update-notifier": "0.5.0"
+  },
+  "devDependencies": {
+    "babel": "5.8.23",
+    "babel-runtime": "5.8.25"
+  }
+}
