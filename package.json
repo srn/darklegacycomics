@@ -9,6 +9,9 @@
     "watch": "npm run compile -- --watch",
     "prepublish": "npm run compile"
   },
+  "bin": {
+    "darklegacycomics": "cli.js"
+  },
   "engines": {
     "node": ">=4"
   },
