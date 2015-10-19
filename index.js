@@ -19,7 +19,7 @@ async function fetch(path) {
     let $ = cheerio.load(body);
 
     let selector = $('.archive .title a');
-    let count = selector.length - blacklisted.length;
+    let count = (selector.length - blacklisted.length);
 
     var limiter = new Bottleneck(20, 250);
 
@@ -35,7 +35,7 @@ async function fetch(path) {
 
       logUpdate(log.join('\n'));
 
-      if ((errors.length - count) === downloadCount ) {
+      if (downloadCount === (count - errors.length)) {
         console.log(`Finished downloading`);
 
         process.exit(0);
