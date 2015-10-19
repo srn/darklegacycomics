@@ -2,10 +2,10 @@
   "name": "darklegacycomics",
   "version": "1.0.3",
   "description": "Simple tool for downloading all comics for offline use",
-  "main": "index-compiled.js",
+  "main": "compiled.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "babel index.js --out-file index-compiled.js --optional runtime",
+    "compile": "babel index.js --out-file compiled.js --optional runtime",
     "watch": "npm run compile -- --watch",
     "prepublish": "npm run compile"
   },
@@ -31,6 +31,8 @@
   },
   "homepage": "https://github.com/srn/darklegacycomics#readme",
   "dependencies": {
+    "babel": "5.8.23",
+    "babel-runtime": "5.8.25",
     "bottleneck": "1.9.1",
     "cheerio": "0.19.0",
     "elegant-spinner": "1.0.1",
@@ -41,9 +43,5 @@
     "mkdirp": "0.5.1",
     "slug": "0.9.1",
     "update-notifier": "0.5.0"
-  },
-  "devDependencies": {
-    "babel": "5.8.23",
-    "babel-runtime": "5.8.25"
   }
 }

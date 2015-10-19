@@ -2,5 +2,5 @@ node_modules
 npm-debug.log
 coverage
 .idea/
-index-compiled.js
+compiled.js
 comics

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
-const darklegacycomics = require('./index-compiled');
+const darklegacycomics = require('./compiled');
 const updateNotifier = require('update-notifier');
 const meow = require('meow');
 
