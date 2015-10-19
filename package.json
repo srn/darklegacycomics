@@ -1,6 +1,6 @@
 {
   "name": "darklegacycomics",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple tool for downloading all comics for offline use",
   "main": "index-compiled.js",
   "scripts": {
