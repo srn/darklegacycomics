@@ -53,6 +53,8 @@ async function fetch(path) {
         let stream = got.stream(`${BASE_URL}/comics/${idx + 1}.jpg`);
         stream.on('error', err => {
           errors.push({err, idx, title});
+
+          cb();
         });
 
         let writeStream = fs.createWriteStream(`${path}/${idx + 1}-${slug(title)}.jpg`);
@@ -63,6 +65,8 @@ async function fetch(path) {
         });
         writeStream.on('error', err => {
           console.log(err);
+
+          cb();
         });
 
         stream.pipe(writeStream);
